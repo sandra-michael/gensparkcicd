@@ -1,4 +1,4 @@
-module testCicd
+module ping-service
 
 go 1.23.3
 
