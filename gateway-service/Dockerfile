@@ -40,9 +40,9 @@ FROM alpine:latest
 WORKDIR /app
 
 # Copy the compiled binary from the previous stage
-COPY --from=builder /app/ping-service .
+COPY --from=builder /app/gateway-service .
 
 
 EXPOSE 80
 # Command to run the application
-CMD ["./ping-service"]
+CMD ["./gateway-service"]
