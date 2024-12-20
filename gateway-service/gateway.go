@@ -8,9 +8,7 @@ func main() {
 	//"/" matches anything to route map
 	//"/abc" will only match "/abc" and not any other path in the route
 	http.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("I am working and healthy"))
+		w.Write([]byte("I am working and healthy v1"))
 	})
-
-	panic(http.ListenAndServe(":80", nil))
 
 }
